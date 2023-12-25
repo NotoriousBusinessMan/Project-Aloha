@@ -80,6 +80,7 @@ $('.slider').slick({
 	slidesToScroll: 2,
 	autoplay: true,
 	autoplaySpeed:1000,
+	dots:true,
 	responsive: [
 		{
 		  breakpoint: 769,
@@ -118,18 +119,3 @@ menu_btn.addEventListener('click', function () {
 });
 
 
-var arrowImages = document.querySelectorAll('.arrow');
-if (document.body.classList.contains('dark')) {
-	// Select all images with class 'arrow'
-
-	// Loop through each arrow image
-	arrowImages.forEach(function(image) {
-		// Change the src attribute value
-		image.src = '/images/arrow_white.png'; // Replace 'new-src-value.jpg' with the desired new source
-	});
-} else {
-	arrowImages.forEach(function(image) {
-		// Change the src attribute value
-		image.src = '/images/arrow.png'; // Replace 'new-src-value.jpg' with the desired new source
-	});
-}
