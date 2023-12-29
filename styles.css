@@ -213,8 +213,7 @@ header .max-width .right {
 }
 #home .max-width .right .img-box {
   width: 90%;
-  background: url(images/abu-1.jpg) no-repeat;
-  background-repeat:no-repeat;
+  background: url(images/abu-1.jpg);
   background-size: cover;
   background-position: center center;
   box-shadow: 0px 20px 5px 5px rgba(0, 0, 0, 0.2);
@@ -1271,14 +1270,15 @@ footer .max-width .four ul li p {
   align-items: center;
 }
 #merchLanding .max-width header .left {
-  width: 50%;
+  width: 30%;
 }
 #merchLanding .max-width header .left h1 {
-  width: 40%;
+  font-size: 36px;
+  width: 100%;
   font-family: "Poppins-Black";
 }
 #merchLanding .max-width header .right {
-  width: 50%;
+  width: 70%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -1286,12 +1286,18 @@ footer .max-width .four ul li p {
 #merchLanding .max-width header .right form {
   display: flex;
   align-items: center;
+  position: relative;
 }
 #merchLanding .max-width header .right form #form_for_search {
   display: none;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 200px;
+  transition: all 0.3s linear;
 }
 #merchLanding .max-width header .right form #form_for_search input {
-  width: 80%;
+  width: 200px;
   padding: 6px 16px;
   border-radius: 8px;
   border: none;
@@ -1312,12 +1318,18 @@ footer .max-width .four ul li p {
   color: #fff;
   font-weight: 700;
 }
+#merchLanding .max-width header .right form .search-active {
+  display: flex !important;
+  align-items: center !important;
+  left: -277px !important;
+  top: -16px !important;
+}
 #merchLanding .max-width header .right ul {
   display: flex;
   align-items: center;
 }
 #merchLanding .max-width header .right ul li {
-  margin-right: 15px;
+  margin-right: 22px;
 }
 #merchLanding .max-width header .right ul li:last-child {
   margin-right: 0;

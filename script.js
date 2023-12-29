@@ -2,24 +2,24 @@ let togglebtn = document.getElementById('toggle-btn')
 let search_icon = document.getElementById('search_icon')
 let form = document.getElementById('form_for_search')
 
-togglebtn.addEventListener('click',function(e) {
-    e.preventDefault();
-    document.body.classList.toggle('dark')
-    if (body.classList.contains('dark')) {
-      	togglebtn.innerText = 'light'
-        document.documentElement.style.setProperty('--text-color', '#fff');
-        document.documentElement.style.setProperty('--border-color', '#fff');
-        document.documentElement.style.setProperty('--bg-color', '#fff');
-    } else {
-		togglebtn.innerText = 'dark'
-        document.documentElement.style.setProperty('--text-color', '#000');
-        document.documentElement.style.setProperty('--border-color', '#fff');
-        document.documentElement.style.setProperty('--bg-color', '#000');
-    }
-})
+// togglebtn.addEventListener('click',function(e) {
+//     e.preventDefault();
+//     document.body.classList.toggle('dark')
+//     if (body.classList.contains('dark')) {
+//       	togglebtn.innerText = 'light'
+//         document.documentElement.style.setProperty('--text-color', '#fff');
+//         document.documentElement.style.setProperty('--border-color', '#fff');
+//         document.documentElement.style.setProperty('--bg-color', '#fff');
+//     } else {
+// 		togglebtn.innerText = 'dark'
+//         document.documentElement.style.setProperty('--text-color', '#000');
+//         document.documentElement.style.setProperty('--border-color', '#fff');
+//         document.documentElement.style.setProperty('--bg-color', '#000');
+//     }
+// })
 
 search_icon.addEventListener('click', function(e){
-  form.style.display = 'block';
+    form.classList.toggle('search-active');
 })
 
 

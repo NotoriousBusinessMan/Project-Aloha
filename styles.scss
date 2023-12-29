@@ -1158,24 +1158,31 @@ footer {
             justify-content: space-between;
             align-items: center;
             .left {
-                width: 50%;
+                width: 30%;
                 h1 {
-                    width: 40%;
+                    font-size: 36px;
+                    width: 100%;
                     font-family: 'Poppins-Black';
                 }
             }
             .right {
-                width: 50%;
+                width: 70%;
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
                 form {
                     display: flex;
                     align-items: center;
+                    position: relative;
                     #form_for_search{
                         display: none;
+                        display: flex;
+                        align-items: center;
+                        position: absolute;
+                        left: 200px;
+                        transition: all 0.3s linear;
                         input {
-                            width: 80%;
+                            width: 200px;
                             padding: 6px 16px;
                             border-radius: 8px;
                             border: none;
@@ -1197,12 +1204,18 @@ footer {
                             font-weight: 700;
                         }
                     }
+                    .search-active {
+                        display: flex !important;
+                        align-items: center !important;
+                        left: -277px !important;
+                        top: -16px !important;
+                    }
                 }
                 ul {
                     display: flex;
                     align-items: center;
                     li {
-                        margin-right: 15px;
+                        margin-right: 22px;
                         &:last-child {
                             margin-right: 0;
                         }
