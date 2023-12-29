@@ -117,14 +117,24 @@ header .max-width .middle ul {
   }
 }
 header .max-width .middle ul li {
-  margin-right: 16px;
+  margin-right: 0px;
 }
 header .max-width .middle ul li:last-child {
   margin-right: 0;
 }
+@media (max-width: 981px) {
+  header .max-width .middle ul li {
+    margin-right: 15px;
+  }
+}
 header .max-width .middle ul li a {
   color: var(--text-color);
   font-family: "Poppins-Medium";
+}
+@media (max-width: 981px) {
+  header .max-width .middle ul li a {
+    font-size: 14px;
+  }
 }
 header .max-width .right {
   width: 25%;
@@ -1071,6 +1081,253 @@ footer .max-width .four ul li p {
   .menu {
     display: none;
   }
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.up {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.down {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5em;
+}
+
+.card1 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 90px 5px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.instagram {
+  margin-top: 1.5em;
+  margin-left: 1.2em;
+  fill: #cc39a4;
+}
+
+.card2 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 90px 5px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.twitter {
+  margin-top: 1.5em;
+  margin-left: -0.9em;
+  fill: #03A9F4;
+}
+
+.card3 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 5px 90px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.github {
+  margin-top: -0.6em;
+  margin-left: 1.2em;
+}
+
+.card4 {
+  width: 90px;
+  height: 90px;
+  outline: none;
+  border: none;
+  background: white;
+  border-radius: 5px 5px 90px 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  transition: 0.2s ease-in-out;
+}
+
+.discord {
+  margin-top: -0.9em;
+  margin-left: -1.2em;
+  fill: #8c9eff;
+}
+
+.card1:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+  fill: white;
+}
+
+.card2:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #03A9F4;
+}
+
+.card2:hover .twitter {
+  fill: white;
+}
+
+.card3:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: black;
+}
+
+.card3:hover .github {
+  fill: white;
+}
+
+.card4:hover {
+  cursor: pointer;
+  scale: 1.1;
+  background-color: #8c9eff;
+}
+
+.card4:hover .discord {
+  fill: white;
+}
+
+#complete-about-me {
+  padding: 40px 0px;
+}
+#complete-about-me .max-width .topContentBox {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#complete-about-me .max-width .topContentBox h2 {
+  font-size: var(--sub-size);
+  font-family: "Poppins-Black";
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#complete-about-me .max-width .topContentBox h2 b {
+  font-size: 36px;
+}
+#complete-about-me .max-width .topContentBox span {
+  display: block;
+  font-family: "Poppins-Medium";
+  text-decoration: underline;
+}
+#complete-about-me .max-width .topContentBox span a {
+  display: block;
+}
+#complete-about-me .max-width .bottomContentBox {
+  padding: 40px 0px;
+  margin-bottom: 33px;
+}
+#complete-about-me .max-width .bottomContentBox p {
+  font-family: "Poppins-Light";
+}
+#complete-about-me .max-width .social-post-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#offer-banner {
+  padding: 10px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+#offer-banner span {
+  color: #fff;
+  font-family: "Poppins-Medium";
+  font-size: var(--min-size);
+}
+
+#merchLanding {
+  padding: 40px 0px;
+}
+#merchLanding .max-width header {
+  padding: 18px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#merchLanding .max-width header .left {
+  width: 50%;
+}
+#merchLanding .max-width header .left h1 {
+  width: 40%;
+  font-family: "Poppins-Black";
+}
+#merchLanding .max-width header .right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#merchLanding .max-width header .right form {
+  display: flex;
+  align-items: center;
+}
+#merchLanding .max-width header .right form #form_for_search {
+  display: none;
+}
+#merchLanding .max-width header .right form #form_for_search input {
+  width: 80%;
+  padding: 6px 16px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #ececec;
+  font-family: "Poppins-Black";
+}
+#merchLanding .max-width header .right form #form_for_search button {
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  background: #0569ff;
+  position: relative;
+  left: -22px;
+  top: -1px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: #fff;
+  font-weight: 700;
+}
+#merchLanding .max-width header .right ul {
+  display: flex;
+  align-items: center;
+}
+#merchLanding .max-width header .right ul li {
+  margin-right: 15px;
+}
+#merchLanding .max-width header .right ul li:last-child {
+  margin-right: 0;
+}
+#merchLanding .max-width header .right ul li a {
+  display: block;
+}
+#merchLanding .max-width header .right ul li a img {
+  display: block;
+  width: 28px;
+  height: 28px;
 }
 
 /*# sourceMappingURL=styles.css.map */
