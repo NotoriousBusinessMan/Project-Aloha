@@ -1273,6 +1273,7 @@ footer .max-width .four ul li p {
   background: #000;
   position: fixed;
   width: 100%;
+  z-index: 99;
 }
 #offer-banner span {
   color: #fff;
@@ -1382,6 +1383,7 @@ footer .max-width .four ul li p {
 }
 #merchLanding .max-width #merchHome .right {
   width: 50%;
+  padding: 22px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -1402,6 +1404,52 @@ footer .max-width .four ul li p {
 #merchLanding .max-width #merchHome .right .four {
   width: 220px;
   border-radius: 8px;
+}
+
+#merchShowOff {
+  padding: 60px 0px;
+}
+#merchShowOff .max-width .item_box {
+  padding: 20px 0px;
+}
+#merchShowOff .max-width .item_box .top {
+  margin-bottom: 22px;
+}
+#merchShowOff .max-width .item_box .top h3 {
+  font-size: var(--sub-size);
+  font-family: "Poppins-Bold";
+}
+#merchShowOff .max-width .item_box .bottom {
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+}
+#merchShowOff .max-width .item_box .bottom .item {
+  width: 210px !important;
+  overflow: hidden !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  background: #eeeeee;
+  margin-right: 20px;
+}
+#merchShowOff .max-width .item_box .bottom .item:last-child {
+  margin-right: 0;
+}
+#merchShowOff .max-width .item_box .bottom .item img {
+  width: 100%;
+}
+#merchShowOff .max-width .item_box .bottom .item h5 {
+  font-size: var(--min-size);
+  font-family: "Poppins-Black";
+  padding: 8px 10px;
+  text-align: center;
+}
+#merchShowOff .max-width .item_box .bottom .item h4 {
+  font-size: 22px;
+  font-family: "Poppins-ExtraBold";
+  padding: 8px 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -18,10 +18,6 @@ let form = document.getElementById('form_for_search')
 //     }
 // })
 
-search_icon.addEventListener('click', function(e){
-    form.classList.toggle('search-active');
-})
-
 
 
 
@@ -113,6 +109,7 @@ $('.slider').slick({
 
 const menu_btn = document.querySelector('.hamburger');
 const mobile_menu = document.querySelector('.mobile-nav');
+
 menu_btn.addEventListener('click', function () {
     menu_btn.classList.toggle('is-active');
     mobile_menu.classList.toggle('is-active');
@@ -128,11 +125,3 @@ menu_btn.addEventListener('click', function () {
 
 
 
-$('#shirt-carousel').slick({
-	infinite: true,
-	slidesToShow: 3,
-	slidesToScroll: 2,
-	autoplay: true,
-	autoplaySpeed:1000,
-	dots:true,
-})
