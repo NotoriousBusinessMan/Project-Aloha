@@ -1082,10 +1082,21 @@ footer .max-width .four ul li p {
     display: none;
   }
 }
+@media (max-width: 401px) {
+  .instagram-media {
+    min-width: 250px !important;
+  }
+}
+
 .main {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
+}
+@media (max-width: 981px) {
+  .main {
+    margin: 60px 0px;
+  }
 }
 
 .up {
@@ -1216,6 +1227,7 @@ footer .max-width .four ul li p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 #complete-about-me .max-width .topContentBox h2 {
   font-size: var(--sub-size);
@@ -1246,6 +1258,12 @@ footer .max-width .four ul li p {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 981px) {
+  #complete-about-me .max-width .social-post-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
 
 #offer-banner {
   padding: 10px 40px;
@@ -1253,6 +1271,8 @@ footer .max-width .four ul li p {
   justify-content: center;
   align-items: center;
   background: #000;
+  position: fixed;
+  width: 100%;
 }
 #offer-banner span {
   color: #fff;
@@ -1294,7 +1314,7 @@ footer .max-width .four ul li p {
   align-items: center;
   position: absolute;
   left: 200px;
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
 }
 #merchLanding .max-width header .right form #form_for_search input {
   width: 200px;
@@ -1341,6 +1361,47 @@ footer .max-width .four ul li p {
   display: block;
   width: 28px;
   height: 28px;
+}
+#merchLanding .max-width #merchHome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0px;
+}
+#merchLanding .max-width #merchHome .left {
+  width: 50%;
+}
+#merchLanding .max-width #merchHome .left h2 {
+  font-size: var(--main-size);
+  font-family: "Poppins-Black";
+}
+#merchLanding .max-width #merchHome .left p {
+  font-family: "Poppins-Light";
+  font-size: var(--small-size);
+  margin-bottom: 12px;
+}
+#merchLanding .max-width #merchHome .right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#merchLanding .max-width #merchHome .right .first {
+  width: 220px;
+  border-radius: 8px;
+  margin-right: 8px;
+}
+#merchLanding .max-width #merchHome .right .second {
+  width: 220px;
+  border-radius: 8px;
+}
+#merchLanding .max-width #merchHome .right .three {
+  width: 220px;
+  border-radius: 8px;
+}
+#merchLanding .max-width #merchHome .right .four {
+  width: 220px;
+  border-radius: 8px;
 }
 
 /*# sourceMappingURL=styles.css.map */

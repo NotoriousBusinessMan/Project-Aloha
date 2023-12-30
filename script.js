@@ -127,3 +127,12 @@ menu_btn.addEventListener('click', function () {
 });
 
 
+
+$('#shirt-carousel').slick({
+	infinite: true,
+	slidesToShow: 3,
+	slidesToScroll: 2,
+	autoplay: true,
+	autoplaySpeed:1000,
+	dots:true,
+})
