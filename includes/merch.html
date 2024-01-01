@@ -154,9 +154,104 @@
                     </div>
                 </div>
             </div>  
+
+
+
+
+            <div class="item_box accessories">
+                <div class="top">
+                    <h3>Frames and Other Accessories</h3>
+                </div>
+                <div class="bottom product-slick">
+                    <div class="item">
+                        <img src="../images/product-flex-3.png" alt="product">
+                        <h5>Male Round Neck Half Sleeve</h5>
+                        <h4>&#x20B9; 484 /-</h4>
+                    </div>
+                    <div class="item">
+                        <img src="../images/product-flex-3.png" alt="product">
+                        <h5>Male Round Neck Half Sleeve</h5>
+                        <h4>&#x20B9; 484 /-</h4>
+                    </div>
+                    <div class="item">
+                        <img src="../images/product-flex-3.png" alt="product">
+                        <h5>Male Round Neck Half Sleeve</h5>
+                        <h4>&#x20B9; 484 /-</h4>
+                    </div>
+                    <div class="item">
+                        <img src="../images/product-flex-3.png" alt="product">
+                        <h5>Male Round Neck Half Sleeve</h5>
+                        <h4>&#x20B9; 484 /-</h4>
+                    </div>
+                    <div class="item">
+                        <img src="../images/product-flex-3.png" alt="product">
+                        <h5>Male Round Neck Half Sleeve</h5>
+                        <h4>&#x20B9; 484 /-</h4>
+                    </div>
+                    <div class="item">
+                        <img src="../images/product-flex-3.png" alt="product">
+                        <h5>Male Round Neck Half Sleeve</h5>
+                        <h4>&#x20B9; 484 /-</h4>
+                    </div>
+                    <div class="item">
+                        <img src="../images/product-flex-3.png" alt="product">
+                        <h5>Male Round Neck Half Sleeve</h5>
+                        <h4>&#x20B9; 484 /-</h4>
+                    </div>
+                </div>
+            </div> 
         </div>
     </section>
 
+
+
+    <footer>
+        <div class="max-width">
+            <div class="one">
+                <h2>Thanks for Visiting</h2>
+                <p>My unmatched Artistic skills coupled with some paint brushes makes me a feared opponent in any realm of artistic endeavour.</p>
+                <div class="social">
+                    <a href="#"><img src="../images/instagram.png" alt="instagram.png"></a>
+                    <a href="#"><img src="../images/facebook.png" alt="facebook.png"></a>
+                    <a href="#"><img src="../images/twitter.png" alt="twitter.png"></a>
+                </div>
+            </div>
+            <div class="two">
+                <h1 data-value="Aloha" class="special">Aloha</h1>
+                <p>Crafting gems...</p>
+            </div>
+            <div class="three">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="four">
+                <h2>Contact Info</h2>
+                <ul>
+                    <li>
+                        <img src="../images/location-pin.png" alt="">
+                        <p>Lorem, ipsum dolor sit </p>
+                    </li>
+                    <li>
+                        <img src="../images/call.png" alt="">
+                        <div class="no">
+                            <p>+91 2738938399</p>
+                            <p>+91 2738938399</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="../images/email.png" alt="">
+                        <p>abuzzzaloha@example.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -170,12 +265,45 @@
             slidesToScroll: 2,
             autoplay: true,
             autoplaySpeed:1000,
+            responsive: [
+                {
+                breakpoint: 981,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                    }
+                },
+                {
+                breakpoint: 769,
+                    settings: {
+                        slidesToShow: 2,
+                        infinite: true,
+                    }
+                },
+            ]
         })
         $('.product-slick').slick({
             infinite: false,
             slidesToShow: 5,
             autoplay: false,
             dots:true,
+            responsive: [
+                {
+                breakpoint: 981,
+                    settings: {
+                        slidesToShow: 4,
+                        infinite: true,
+                    }
+                },
+                {
+                breakpoint: 769,
+                    settings: {
+                        slidesToShow: 3,
+                        infinite: true,
+                    }
+                },
+            ]
             // autoplaySpeed:1000,
             // slidesToScroll: 2,
         })
